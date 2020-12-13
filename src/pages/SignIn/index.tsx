@@ -17,7 +17,7 @@ import { Container, Content, Background } from './styles';
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
 
-  const { auth } = useContext(AuthContext);
+  const { name } = useContext(AuthContext);
 
   const handleSubmit = useCallback(async (data: object) => {
     try {
