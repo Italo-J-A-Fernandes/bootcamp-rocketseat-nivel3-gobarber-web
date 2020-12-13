@@ -1,16 +1,16 @@
 import React from 'react';
 
 import SingIn from './pages/SignIn';
-import SingUp from './pages/SignUp';
+// import SingUp from './pages/SignUp';
 import GlobalStyle from './styles/global';
 
-import AuthContext from './context/AuthContext';
+import { AuthProvider } from './context/AuthContext';
 
 const App: React.FC = () => (
   <>
-    <AuthContext.Provider value={{ name: 'Italo' }}>
+    <AuthProvider>
       <SingIn />
-    </AuthContext.Provider>
+    </AuthProvider>
     <GlobalStyle />
   </>
 );
