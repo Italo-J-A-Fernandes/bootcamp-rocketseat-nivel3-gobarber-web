@@ -18,6 +18,32 @@ const ToastContainer: React.FC = () => {
           <FiXCircle size={18} />
         </button>
       </Toast>
+
+      <Toast type="sucess">
+        <FiAlertCircle size={20} />
+
+        <div>
+          <strong>Aconteceu um erro</strong>
+          <p>Não foi possivel fazer login na aplicação</p>
+        </div>
+
+        <button type="button">
+          <FiXCircle size={18} />
+        </button>
+      </Toast>
+
+      <Toast type="error">
+        <FiAlertCircle size={20} />
+
+        <div>
+          <strong>Aconteceu um erro</strong>
+          <p>Não foi possivel fazer login na aplicação</p>
+        </div>
+
+        <button type="button">
+          <FiXCircle size={18} />
+        </button>
+      </Toast>
     </Container>
   );
 };
